@@ -1,4 +1,4 @@
-##Django GraphQL Server
+## Django GraphQL Server
 
 ```python
 pip3 install -r requirements            # Install requirements
@@ -8,14 +8,14 @@ python3 manage.py loaddata init.yaml    # Fill db with dummydata
 python3 manage.py runserver             # Starts the server on localhost:8000
 ```
 
-###Logins
+### Logins
 
 ```bash
 Login: admin
 Password: admin2017
 ```
 
-###URLs
+### URLs
 ```bash
 http://localhost:8000/api               # Api
 http://localhost:8000/api/graphiql      # GraphiQL
