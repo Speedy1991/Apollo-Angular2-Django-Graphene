@@ -1,0 +1,14 @@
+query Users($first_name: String) {
+  users(firstName: $first_name) {
+    edges {
+      node {
+        firstName
+        lastName
+        emails {
+          address
+          verified
+        }
+      }
+    }
+  }
+}

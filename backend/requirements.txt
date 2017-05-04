@@ -1,0 +1,4 @@
+django
+django-filter
+graphene-django
+django-cors-headers

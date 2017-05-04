@@ -1,0 +1,12 @@
+mutation addUser($firstName: String!, $lastName: String!) {
+  addUser(input: {firstName: $firstName, lastName: $lastName}) {
+    user {
+      firstName
+      lastName
+      emails {
+        address
+        verified
+      }
+    }
+  }
+}
