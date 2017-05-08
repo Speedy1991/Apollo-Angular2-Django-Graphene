@@ -4,7 +4,6 @@
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
-    "start": "\"npm run client\"",
     "client": "ng serve --aot --proxy-conf proxy.conf.json --port 4200",
     "build": "ng build --aot --prod",
     "test": "npm run build",

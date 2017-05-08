@@ -1,0 +1,28 @@
+version: '2'
+services:
+  postgres_data:
+    image: postgres:latest
+    volumes:
+      - /var/lib/postgresql
+
+  postgres:
+    image: postgres:latest
+    volumes_from:
+      - postgres_data
+
+  memcached:
+    image: memcached
+    mem_limit: 1g
+    command: memcached -m 1024m
+
+  backend:
+    build: .
+    container_name: django_graphql_backend
+    command: ./docker-entrypoint.sh
+    depends_on:
+      - postgres
+      - memcached
+    environment:
+      - DOCKER=true
+    ports:
+      - "127.0.0.1:8000:8000"

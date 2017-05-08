@@ -1,0 +1,10 @@
+version: '2'
+services:
+  frontend:
+    build: .
+    container_name: angular_apollo_frontend
+    command: yarn client
+    environment:
+      - DOCKER=true
+    ports:
+      - "127.0.0.1:4200:8888"
