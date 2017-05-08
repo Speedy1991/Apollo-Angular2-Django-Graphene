@@ -8,9 +8,9 @@ python manage.py makemigrations
 echo "Migrate"
 python manage.py migrate
 
-python manage.py sqlflush
-python manage.py sqlflush | python manage.py dbshell
-python manage.py flush --no-input
+#python manage.py sqlflush
+#python manage.py sqlflush | python manage.py dbshell
+#python manage.py flush --no-input
 
 echo "Load dummy data"
 python manage.py loaddata init

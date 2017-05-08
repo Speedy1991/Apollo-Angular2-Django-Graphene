@@ -3,3 +3,4 @@ pyyaml
 django-filter
 graphene-django
 django-cors-headers
+psycopg2
