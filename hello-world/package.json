@@ -4,7 +4,7 @@
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
-    "client": "ng serve --aot --proxy-conf proxy.conf.json --port 4200",
+    "client": "ng serve --aot --port 4200 --host 0.0.0.0",
     "build": "ng build --aot --prod",
     "test": "npm run build",
     "schema:download": "apollo-codegen download-schema http://localhost:8000/api/ --output schema.json",

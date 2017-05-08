@@ -4,6 +4,7 @@ services:
     image: postgres:latest
     volumes:
       - /var/lib/postgresql
+    command: sleep 1m
 
   postgres:
     image: postgres:latest
@@ -25,4 +26,4 @@ services:
     environment:
       - DOCKER=true
     ports:
-      - "127.0.0.1:8000:8000"
+      - "localhost:8000:8000"
