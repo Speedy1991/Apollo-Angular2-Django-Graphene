@@ -92,6 +92,14 @@ if "DOCKER" in os.environ:
             'PORT': 5432,
         }
     }
+
+    CACHES = {
+        'default': {
+            'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+            'LOCATION': 'memcached:11211',
+        }
+    }
+
 else:
     DATABASES = {
         'default': {
