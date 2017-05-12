@@ -3,8 +3,12 @@ What is this
 This is a copy from the [Hello World Example](https://github.com/apollographql/apollo-angular/tree/master/examples/hello-world)
 slightly modified to work with Django Graphene
 
+## Run with docker-compose
+```
+docker-compose up
+```
 
-## How to run
+## Run manually
 
 Simply:
 
