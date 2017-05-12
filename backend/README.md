@@ -1,5 +1,10 @@
-## Django GraphQL Server
 
+### Run with docker-compose
+```bash
+docker-compose up
+```
+
+## Run everything manually
 ```python
 pip3 install -r requirements            # Install requirements
 python3 manage.py makemigrations        # Prepare db changes/creation
