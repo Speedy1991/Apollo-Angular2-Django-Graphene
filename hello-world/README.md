@@ -13,7 +13,8 @@ docker-compose up
 Simply:
 
 ```
-npm start
+yarn install
+yarn client
 ```
 
 ## Generate types
@@ -25,14 +26,13 @@ The whole idea is to hit the server to get the schema from a GraphQL endpoint fo
 You can achieve the first goal by running two commands:
 
 ```
-npm run server
-npm run schema:download
+yarn schema:download
 ```
 
 It saves informations to a file (`schema.json`) that will be used to generate types:
 
 ```
-npm run schema:generate
+yarn schema:generate
 ```
 
 So now on you have a file (`src/graphql/schema.ts`) with everything you need to combine the TypeScript's experience with GraphQL's.
